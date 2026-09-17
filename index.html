@@ -222,15 +222,16 @@ nav.scrolled{background:rgba(14,14,16,.92);backdrop-filter:blur(14px);box-shadow
 .sk-col:hover .sk-tag{border-color:var(--ink-40);color:var(--ink)}
 
 /* ══ PROJECTS ══ */
-.proj-item{display:grid;grid-template-columns:.06fr .3fr 1fr;gap:1.5rem;padding:2.5rem 0;border-bottom:1px solid var(--rule);align-items:start;transition:all .5s;cursor:default;position:relative;overflow:hidden}
+.proj-item{display:grid;grid-template-columns:.06fr 1fr;gap:1.5rem;padding:2.5rem 0;border-bottom:1px solid var(--rule);align-items:start;transition:all .5s;cursor:default;position:relative;overflow:hidden}
 .proj-item::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--rust-glow),transparent 60%);opacity:0;transition:opacity .5s;z-index:0}
 .proj-item:hover::before{opacity:1}
 .proj-item>*{position:relative;z-index:1}
 .proj-item:hover{padding-left:.8rem}
 .p-idx{font-family:var(--serif);font-size:3rem;line-height:1;color:var(--rule);transition:color .4s;font-weight:600}
 .proj-item:hover .p-idx{color:var(--rust)}
-.p-meta h3{font-family:var(--serif);font-size:1.5rem;line-height:1.2;margin-bottom:.3rem}
-.p-meta .pt{font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--rust)}
+.p-name{display:flex;align-items:baseline;gap:1rem;margin-bottom:.6rem;flex-wrap:wrap}
+.p-name h3{font-family:var(--serif);font-size:1.5rem;line-height:1.2}
+.p-name .pt{font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--rust)}
 .p-desc p{font-size:.85rem;color:var(--ink-60);line-height:1.8;margin-bottom:1rem}
 .p-tags{display:flex;flex-wrap:wrap;gap:.3rem}
 .p-tags span{font-family:var(--mono);font-size:.58rem;padding:.22rem .5rem;background:var(--light);border:1px solid var(--rule);border-radius:2px;color:var(--ink-60)}
@@ -280,7 +281,6 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;font-famil
   .sk-col:nth-child(5){border-right:none}
   .edu-row,.exp-row{grid-template-columns:1fr;gap:.7rem}
   .proj-item{grid-template-columns:.08fr 1fr;gap:1rem}
-  .p-meta{display:none}
   .contact{padding:4rem 1.2rem}
   footer{flex-direction:column;gap:.4rem;text-align:center}
 }
@@ -290,7 +290,7 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;font-famil
   .sk-cols{grid-template-columns:1fr}
   .sk-col{border-right:none;border-bottom:1px solid var(--rule)}
   .sk-col:last-child{border-bottom:none}
-  .proj-item{grid-template-columns:1fr}
+  .proj-item{grid-template-columns:.08fr 1fr}
   .p-idx{font-size:2rem}
 }
 </style>
@@ -321,7 +321,7 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;font-famil
   <div class="identity">
     <div class="id-left">
       <div class="id-label">engineer</div>
-      <p class="id-desc">Backend architect building scalable distributed systems and cloud pipelines with Java and Spring Boot.</p>
+      <p class="id-desc">Building distributed backend systems in Java/Spring Boot and integrating LLMs into production-level applications.</p>
     </div>
     <div class="hero-photo">
       <img src="anurag.jpg" alt="Anurag Paul">
@@ -345,8 +345,8 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;font-famil
 <!-- TICKER -->
 <div class="ticker">
   <div class="ticker-t">
-    <span>Java</span><span class="d">&bull;</span><span>Spring Boot</span><span class="d">&bull;</span><span>Python</span><span class="d">&bull;</span><span>Django</span><span class="d">&bull;</span><span>Docker</span><span class="d">&bull;</span><span>Google Cloud</span><span class="d">&bull;</span><span>PostgreSQL</span><span class="d">&bull;</span><span>MongoDB</span><span class="d">&bull;</span><span>Machine Learning</span><span class="d">&bull;</span><span>Microservices</span><span class="d">&bull;</span><span>REST APIs</span><span class="d">&bull;</span><span>Distributed Systems</span><span class="d">&bull;</span>
-    <span>Java</span><span class="d">&bull;</span><span>Spring Boot</span><span class="d">&bull;</span><span>Python</span><span class="d">&bull;</span><span>Django</span><span class="d">&bull;</span><span>Docker</span><span class="d">&bull;</span><span>Google Cloud</span><span class="d">&bull;</span><span>PostgreSQL</span><span class="d">&bull;</span><span>MongoDB</span><span class="d">&bull;</span><span>Machine Learning</span><span class="d">&bull;</span><span>Microservices</span><span class="d">&bull;</span><span>REST APIs</span><span class="d">&bull;</span><span>Distributed Systems</span><span class="d">&bull;</span>
+    <span>Java</span><span class="d">&bull;</span><span>Spring Boot</span><span class="d">&bull;</span><span>Python</span><span class="d">&bull;</span><span>FastAPI</span><span class="d">&bull;</span><span>React</span><span class="d">&bull;</span><span>Docker</span><span class="d">&bull;</span><span>Kubernetes</span><span class="d">&bull;</span><span>PostgreSQL</span><span class="d">&bull;</span><span>Redis</span><span class="d">&bull;</span><span>MongoDB</span><span class="d">&bull;</span><span>LLM Integration</span><span class="d">&bull;</span><span>Microservices</span><span class="d">&bull;</span><span>CI/CD</span><span class="d">&bull;</span>
+    <span>Java</span><span class="d">&bull;</span><span>Spring Boot</span><span class="d">&bull;</span><span>Python</span><span class="d">&bull;</span><span>FastAPI</span><span class="d">&bull;</span><span>React</span><span class="d">&bull;</span><span>Docker</span><span class="d">&bull;</span><span>Kubernetes</span><span class="d">&bull;</span><span>PostgreSQL</span><span class="d">&bull;</span><span>Redis</span><span class="d">&bull;</span><span>MongoDB</span><span class="d">&bull;</span><span>LLM Integration</span><span class="d">&bull;</span><span>Microservices</span><span class="d">&bull;</span><span>CI/CD</span><span class="d">&bull;</span>
   </div>
 </div>
 
@@ -356,9 +356,9 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;font-famil
   <h2 class="s-h rv">Where engineering<br>meets <i>intention</i>.</h2>
   <div class="about-grid">
     <div class="about-col rv">
-      <p>Computer Science Masters student at University College Dublin on track for first class honors. My academic journey began at SRM Institute of Science and Technology in Chennai where I graduated with first class honors in Computer Science.</p>
-      <p>I specialize in distributed systems, cloud computing and machine learning. From designing notification microservices to building healthcare data pipelines, I approach every project with a focus on scalability and clean architecture.</p>
-      <div class="visa">Stamp 1G &mdash; Post-Study Work Visa, Ireland</div>
+      <p>Computer Science Master's student at University College Dublin on track for first-class honours with hands-on experience building distributed backend systems in Java/Spring Boot and integrating LLMs into production-level applications via FastAPI/Docker.</p>
+      <p>Available full-time in Dublin from September 2026. From designing notification microservices to building AI-powered interview platforms, I approach every project with a focus on scalability and clean architecture.</p>
+      <div class="visa">Stamp 2 &mdash; 2 Years Post-Study Work Permit, Ireland</div>
     </div>
     <div class="about-rule"></div>
     <div class="about-col rv">
@@ -377,7 +377,7 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;font-famil
         </div>
         <div class="stat">
           <div class="stat-v">6+</div>
-          <div class="stat-l">Technologies Mastered</div>
+          <div class="stat-l">Repositories on GitHub</div>
         </div>
       </div>
     </div>
@@ -418,23 +418,23 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;font-famil
     <div class="sk-cols rv">
       <div class="sk-col" data-n="01">
         <h4>Languages</h4>
-        <span class="sk-tag">Java</span><span class="sk-tag">Python</span><span class="sk-tag">SQL</span><span class="sk-tag">JavaScript</span>
+        <span class="sk-tag">C++</span><span class="sk-tag">Python</span><span class="sk-tag">Java</span><span class="sk-tag">SQL</span><span class="sk-tag">JavaScript</span>
       </div>
       <div class="sk-col" data-n="02">
         <h4>Frameworks</h4>
-        <span class="sk-tag">Spring Boot</span><span class="sk-tag">FastAPI</span><span class="sk-tag">PyTorch</span><span class="sk-tag">LangChain</span><span class="sk-tag">Django</span><span class="sk-tag">Pandas</span><span class="sk-tag">NumPy</span>
+        <span class="sk-tag">Spring Boot</span><span class="sk-tag">FastAPI</span><span class="sk-tag">React</span>
       </div>
       <div class="sk-col" data-n="03">
         <h4>Cloud &amp; DevOps</h4>
-        <span class="sk-tag">Google Cloud</span><span class="sk-tag">Azure AI Foundry</span><span class="sk-tag">BigQuery</span><span class="sk-tag">Docker</span>
+        <span class="sk-tag">Groq API</span><span class="sk-tag">Docker</span><span class="sk-tag">Kubernetes</span><span class="sk-tag">GitHub Actions</span>
       </div>
       <div class="sk-col" data-n="04">
         <h4>Databases</h4>
-        <span class="sk-tag">PostgreSQL</span><span class="sk-tag">MongoDB</span><span class="sk-tag">NoSQL</span>
+        <span class="sk-tag">PostgreSQL</span><span class="sk-tag">MongoDB</span><span class="sk-tag">Redis</span><span class="sk-tag">Supabase</span>
       </div>
       <div class="sk-col" data-n="05">
         <h4>Concepts</h4>
-        <span class="sk-tag">DSA</span><span class="sk-tag">OOP</span><span class="sk-tag">REST APIs</span><span class="sk-tag">Microservices</span><span class="sk-tag">ML</span><span class="sk-tag">Deep Learning</span><span class="sk-tag">LLM Integration</span>
+        <span class="sk-tag">Systems Design</span><span class="sk-tag">Concurrency</span><span class="sk-tag">Microservices</span><span class="sk-tag">CI/CD</span><span class="sk-tag">Agile/Scrum</span><span class="sk-tag">DSA</span><span class="sk-tag">LLM Integration</span><span class="sk-tag">REST APIs</span>
       </div>
     </div>
   </div>
@@ -446,42 +446,50 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;font-famil
   <h2 class="s-h rv">Selected <i>work</i>.</h2>
   <div class="proj-item rv">
     <div class="p-idx">01</div>
-    <div class="p-meta"><h3>Mock Interview Assistant</h3><div class="pt">AI / LLM</div></div>
     <div class="p-desc">
-      <p>Industry-mentored by Microsoft engineers. Built the backend and LLM evaluation module of a web application where candidates practise interviews with an AI interviewer that asks follow-ups, interrupts and returns structured feedback. Developed the dialogue engine using Azure AI Foundry and LangChain for context-aware adaptive conversations with FastAPI WebSocket support for real-time session flow. Implemented STAR-structure detection, filler-word tracking and pacing analysis for per-session scoring.</p>
-      <div class="p-tags"><span>Python</span><span>FastAPI</span><span>Azure AI Foundry</span><span>LangChain</span><span>PostgreSQL</span><span>WebSocket</span></div>
+      <div class="p-name"><h3>Greenroom</h3><span class="pt">AI / LLM</span></div>
+      <p>Collaborating with Microsoft engineers on architecture and evaluation design. Built the FastAPI backend orchestrating LLM dialogue via Groq (Llama 3.3 70B) across behavioural, technical and system design tracks for this UCD/Microsoft-Azure team project. Delivered a fully voice-driven interview experience via Web Speech API and edge-tts, a self-hosted Piston sandbox on Fly.io for live in-browser code execution through Monaco and a Groq vision-based camera feedback feature, containerised with Docker and deployed via GitHub Actions CI/CD.</p>
+      <div class="p-tags"><span>Python</span><span>FastAPI</span><span>Groq API</span><span>Supabase</span><span>React</span><span>Docker</span><span>GitHub Actions</span></div>
     </div>
   </div>
   <div class="proj-item rv">
     <div class="p-idx">02</div>
-    <div class="p-meta"><h3>Handwritten Math Recognition</h3><div class="pt">Deep Learning</div></div>
     <div class="p-desc">
-      <p>Designed and implemented three deep learning architectures from scratch in PyTorch — a 1D CNN, an encoder-decoder RNN and an encoder-decoder Transformer — for online handwritten mathematical expression recognition. Manually implemented bidirectional LSTM cells, multi-head self-attention, cross-attention and sinusoidal positional encoding. Achieved 93.31% test accuracy on glyph classification and 91.25% Levenshtein Accuracy on infix expressions.</p>
-      <div class="p-tags"><span>Python</span><span>PyTorch</span><span>CNN</span><span>RNN</span><span>Transformer</span><span>Deep Learning</span></div>
+      <div class="p-name"><h3>URL Shortener</h3><span class="pt">Backend / Java</span></div>
+      <p>Built a URL shortening service in Java/Spring Boot with custom aliases, Base62 short-code generation, Redis caching for high-frequency lookups and a PostgreSQL-backed REST API supporting HTTP 302 redirects, link expiry and click analytics. Load-tested the redirect endpoint to 3,000 concurrent requests (50k total) with zero failures and 489ms median latency, uncovering a click-tracking bug where cache-hit redirects skip the analytics increment.</p>
+      <div class="p-tags"><span>Java 17</span><span>Spring Boot</span><span>PostgreSQL</span><span>Redis</span><span>REST API</span></div>
     </div>
   </div>
   <div class="proj-item rv">
     <div class="p-idx">03</div>
-    <div class="p-meta"><h3>SavorSafe</h3><div class="pt">Microservices</div></div>
     <div class="p-desc">
-      <p>Scalable Notification Microservice built with Java 17 and Spring Boot within a distributed architecture. RESTful APIs trigger automated alerts for inventory stock levels, product expiry warnings and system events. Backed by MongoDB and containerized with Docker.</p>
-      <div class="p-tags"><span>Java 17</span><span>Spring Boot</span><span>MongoDB</span><span>Docker</span><span>REST API</span></div>
+      <div class="p-name"><h3>Savorsafe</h3><span class="pt">Microservices</span></div>
+      <p>Designed and implemented a scalable Notification Microservice in Java 17 and Spring Boot within SavorSafe's 4-service architecture, exposing REST APIs for inventory, expiry and system-event alerts, backed by MongoDB and containerised with Docker. Reproduced a MongoDB connection-pool exhaustion event by constraining pool size and seeding 300k documents, isolating a 48% failure rate to an unbounded query and confirmed Resilience4j circuit breakers correctly failed over to 503s.</p>
+      <div class="p-tags"><span>Java 17</span><span>Spring Boot</span><span>MongoDB</span><span>Docker</span><span>Resilience4j</span></div>
     </div>
   </div>
   <div class="proj-item rv">
     <div class="p-idx">04</div>
-    <div class="p-meta"><h3>Diabetes Data Pipeline</h3><div class="pt">Cloud Analytics</div></div>
     <div class="p-desc">
+      <div class="p-name"><h3>Handwritten Math Recognition</h3><span class="pt">Deep Learning</span></div>
+      <p>Designed and implemented three deep learning architectures from scratch in PyTorch — a 1D CNN, an encoder-decoder RNN and an encoder-decoder Transformer — for online handwritten mathematical expression recognition. Manually implemented bidirectional LSTM cells, multi-head self-attention, cross-attention and sinusoidal positional encoding. Achieved 93.31% test accuracy on glyph classification and 91.25% Levenshtein Accuracy on infix expressions.</p>
+      <div class="p-tags"><span>Python</span><span>PyTorch</span><span>CNN</span><span>RNN</span><span>Transformer</span></div>
+    </div>
+  </div>
+  <div class="proj-item rv">
+    <div class="p-idx">05</div>
+    <div class="p-desc">
+      <div class="p-name"><h3>Diabetes Data Pipeline</h3><span class="pt">Cloud Analytics</span></div>
       <p>Cloud-based data analytics pipeline on Google Cloud Platform using BigQuery to process healthcare datasets. Large-scale SQL queries analyzing diabetes prevalence across age groups, BMI ranges and gender demographics. Interactive Looker Studio dashboards for visualization.</p>
       <div class="p-tags"><span>GCP</span><span>BigQuery</span><span>SQL</span><span>Looker Studio</span></div>
     </div>
   </div>
   <div class="proj-item rv">
-    <div class="p-idx">05</div>
-    <div class="p-meta"><h3>Cyclone Prediction</h3><div class="pt">Machine Learning</div></div>
+    <div class="p-idx">06</div>
     <div class="p-desc">
-      <p>Machine learning model predicting cyclone intensity from historical weather datasets. Advanced data preprocessing and feature engineering for improved accuracy. Django-powered backend integrating ML predictions into a web application via REST APIs.</p>
-      <div class="p-tags"><span>Python</span><span>Django</span><span>JavaScript</span><span>ML</span></div>
+      <div class="p-name"><h3>GenAI Union-Find</h3><span class="pt">Data Structures</span></div>
+      <p>Implemented the Union-Find (Disjoint Set) data structure in Java from scratch with path compression and union by rank optimisations. Built a test harness demonstrating set merging and membership queries across complex graph connectivity scenarios.</p>
+      <div class="p-tags"><span>Java</span><span>Data Structures</span><span>Path Compression</span><span>Union by Rank</span></div>
     </div>
   </div>
 </section>
@@ -500,9 +508,7 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;font-famil
       <div class="exp-loc">Bengaluru, India</div>
     </div>
     <ul class="exp-ul">
-      <li>Worked with ABAP data dictionary objects and modular programming concepts</li>
-      <li>Assisted in performance optimization and debugging of SAP programs</li>
-      <li>Collaborated with developers to analyze enterprise workflow requirements</li>
+      <li>Worked on ABAP data dictionary objects, modular programming and performance debugging of SAP programs, collaborating with senior developers to analyse enterprise workflow requirements</li>
     </ul>
   </div>
 </section>
@@ -511,7 +517,7 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;font-famil
 <section class="contact" id="contact">
   <div class="rv"><span class="s-tag">06 &mdash; Contact</span></div>
   <h2 class="s-h rv">Let's build something <i>together</i>.</h2>
-  <p class="c-sub rv">Based in Dublin, Ireland. Open to opportunities in software engineering, backend development, machine learning and cloud computing.</p>
+  <p class="c-sub rv">Based in Dublin, Ireland. Available full-time from September 2026. Open to opportunities in software engineering, backend development and LLM integration.</p>
   <div class="c-row rv">
     <a href="mailto:anuragp01022003@gmail.com" class="cl">
       <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -521,7 +527,7 @@ footer{padding:1.5rem 3rem;display:flex;justify-content:space-between;font-famil
       <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
       +353 899403811
     </a>
-    <a href="https://www.linkedin.com/in/anurag-paul-248bb4359/" class="cl" target="_blank" rel="noopener">
+    <a href="https://www.linkedin.com/in/anurag-paul" class="cl" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
       LinkedIn
     </a>
